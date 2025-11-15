@@ -7,6 +7,12 @@ const paymentSchema = new mongoose.Schema({
     ref: "Car",                            
     required: true                         
   },
+  sessionId: {
+    type:mongoose.Schema.Types.ObjectId,
+    ref : "parking session",
+    required: true
+  },
+      
   amount: { 
     type: Number,                        
     required: true                        
