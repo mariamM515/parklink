@@ -13,6 +13,10 @@ const parkingSessionSchema = new mongoose.Schema({
   endtTime: { 
     type: Date 
   },
+  duration:{
+    type:Number,
+    default: 0
+  },
   fee: { 
     type: Number, 
     default: 0 
